@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container">
       <Routes>
-        <Route index path='miraplay_referals' element={<Welcome/>} />
+        <Route index path='/' element={<Welcome/>} />
         {/* <Route  path='/reviews' element={<Reviews/>}/> */}
 
       </Routes>
