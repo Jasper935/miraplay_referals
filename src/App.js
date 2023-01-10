@@ -6,7 +6,10 @@ function App() {
     <div className="container">
       <Routes>
         <Route index path='/' element={<Welcome/>} />
+        
         {/* <Route  path='/reviews' element={<Reviews/>}/> */}
+
+
 
       </Routes>
     </div>
