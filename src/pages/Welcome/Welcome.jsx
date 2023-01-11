@@ -28,7 +28,7 @@ export const Welcome = () => {
           Зарабатывай на реферальной программе
         </h1>
         <div className={isLoginOpen||isRegisterOpen ? css.modal : css.modalDisabled}>
-          <Modal register={isRegisterOpen?true:false} closeModal={closeModal} />{" "}
+          <Modal register={isRegisterOpen?true:false} logIn={setIsLoginOpen?true:false} closeModal={closeModal} />{" "}
         </div>
       </div>
     </div>
