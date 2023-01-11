@@ -10,8 +10,8 @@ export const Header = ({onLogin,
         <h5 className={css.logoText}>MIRAPLAY</h5>
       </div>
       <div className={css.btnWrap}>
-        <button disabled={isButtonsDisabled?true:false} onClick={()=>!isButtonsDisabled&&onLogin()} className={css.btn}>Вход</button>
-        <button disabled={isButtonsDisabled?true:false} onClick={()=>!isButtonsDisabled&&onRegister()} className={css.btn}>Регистрация</button>
+        <button className={css.btn} disabled={isButtonsDisabled?true:false} onClick={()=>!isButtonsDisabled&&onLogin()} >Вход</button>
+        <button className={css.btn} disabled={isButtonsDisabled?true:false} onClick={()=>!isButtonsDisabled&&onRegister()} >Регистрация</button>
       </div>
     </header>
   );

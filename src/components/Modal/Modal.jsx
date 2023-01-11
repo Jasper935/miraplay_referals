@@ -18,7 +18,7 @@ export const Modal = ({ register, logIn, closeModal }) => {
       />
       <input className={css.input} type="text" placeholder="ПАРОЛЬ" />
       <button className={css.btn} type="submit">
-        {register ? "Регистрациия" : "Вход"}
+        {register ? "Регистрация" : "Вход"}
       </button>
       <button className={css.closeBtn} onClick={() => closeModal()}>
         x

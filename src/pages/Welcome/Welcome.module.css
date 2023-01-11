@@ -1,81 +1,102 @@
-.container{
-    color: white;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.container {
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.imgWrap{
-    position: relative;
+.imgWrap {
+  position: relative;
 
-    width: 100%;
-    height: 93%;
-    background-image:linear-gradient(
-        to top,
-        rgba(67, 67, 70, 0.2),
-        rgba(44, 42, 42, 1)
-      ), url('../../images/welcome-bg.jpg');
-    background-size: cover;
+  width: 100%;
+  height: 93%;
+  background-image: linear-gradient(
+      to top,
+      rgba(67, 67, 70, 0.2),
+      rgba(44, 42, 42, 1)
+    ),
+    url("../../images/welcome-bg.jpg");
+  background-size: cover;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.headTitle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 
-
-    padding: 25px 50px;
-    width: 900px;
-    color: #3f9c14;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    backdrop-filter: blur(18px);
-    border-radius: 30px;
-    transition: all 0.5s ease-in-out;
+  padding: 25px 50px;
+  width: 900px;
+  color: #3f9c14;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
 }
-.headTitleDisabled{
-    position: absolute;
-    top: 50%;
-    left: -50%;
-    transform: translateY(-50%) translateX(-50%);
-    transition: all 0.5s ease-in-out;
+.contentDisabled {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: all 0.5s ease-in-out;
 
-    padding: 25px 50px;
-    width: 900px;
-    color: #3f9c14;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    backdrop-filter: blur(18px);
-    border-radius: 30px;
+  padding: 25px 50px;
+  width: 900px;
+  color: var(--main-green-color);
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+}
+.headTitle {
+  font-size: 50px;
+  margin-bottom: 35px;
 }
 
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-
-width: 400px;
-height: 500px;
-border-radius: 30px;
-background-color: transparent;
-transition: all 0.5s ease-in-out;
+.btn{
+    font-size: 30px;
+    padding: 10px 15px;
+    background-color: var(--main-green-color);
+    border-color: transparent;
+    margin-right: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(31, 32, 32);
+    transition: all 0.3s linear;
 }
-.modalDisabled{
-    position: absolute;
-    top: 50%;
-    left: 150%;
-    transform: translateY(-50%) translateX(-50%);
+.btn:last-child{
+    margin-right: 0;
+}
+.btn:hover{
+    background-color: rgb(119, 216, 119);
+    transition: all 0.3s linear;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 
-width: 400px;
-height: 500px;
-border-radius: 30px;
-background-color: black; 
-transition: all 0.5s ease-in-out;
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.modalDisabled {
+  position: absolute;
+  top: 50%;
+  left: 150%;
+  transform: translateY(-50%) translateX(-50%);
+
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
 }

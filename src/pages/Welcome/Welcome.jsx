@@ -9,27 +9,46 @@ export const Welcome = () => {
   const onLogin = () => {
     setIsLoginOpen(true);
   };
-  const onRegister= () => {
+  const onRegister = () => {
     setIsRegisterOpen(true);
   };
 
-  const closeModal=()=>{
-    setIsLoginOpen(false)
-    setIsRegisterOpen(false)
-
-  }
+  const closeModal = () => {
+    setIsLoginOpen(false);
+    setIsRegisterOpen(false);
+  };
   return (
     <div className={css.container}>
-      <Header onLogin={onLogin} onRegister={onRegister} isButtonsDisabled={(isLoginOpen||isRegisterOpen)&&true}/>
+      <Header
+        onLogin={onLogin}
+        onRegister={onRegister}
+        isButtonsDisabled={(isLoginOpen || isRegisterOpen) && true}
+      />
       <div className={css.imgWrap}>
-        <h1 className={isLoginOpen||isRegisterOpen ? css.headTitleDisabled : css.headTitle}>
-          {" "}
-          
-          Зарабатывай на реферальной программе
-        </h1>
-        <div className={isLoginOpen||isRegisterOpen ? css.modal : css.modalDisabled}>
-          <Modal register={isRegisterOpen?true:false} logIn={setIsLoginOpen?true:false} closeModal={closeModal} />{" "}
-        </div>
+        <div
+          className={
+            isLoginOpen || isRegisterOpen ? css.contentDisabled : css.content
+          }
+        >
+          <h1 className={css.headTitle}>
+            Зарабатывай на реферальной программе
+          </h1>
+          <div className={css.btnGroup}>
+            <button className={css.btn} onClick={()=>setIsRegisterOpen(true)}> Хочу начать! </button>
+            <button className={css.btn}> Как это работает? </button>
+          </div>
+          </div>
+          <div
+            className={
+              isLoginOpen || isRegisterOpen ? css.modal : css.modalDisabled
+            }
+          >
+            <Modal
+              register={isRegisterOpen ? true : false}
+              closeModal={closeModal}
+            />{" "}
+          </div>
+        
       </div>
     </div>
   );
