@@ -3,7 +3,7 @@ import { Header } from '../../components/Header/Header'
 import { useState } from 'react'
 
 export const Welcome=()=>{
-const [isModalOpen, setIsModalOpen]=useState(true)
+const [isModalOpen, setIsModalOpen]=useState(false)
 
 const onClick=()=>{
     setIsModalOpen(!isModalOpen)
