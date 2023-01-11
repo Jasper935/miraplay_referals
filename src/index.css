@@ -1,3 +1,7 @@
+:root {
+  --main-green-color: #3f9c14;
+}
+
 body {
   margin: 0;
   font-family: Raleway;
@@ -32,6 +36,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul[class],
 ol[class],
