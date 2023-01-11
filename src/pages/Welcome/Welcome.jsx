@@ -6,14 +6,15 @@ export const Welcome=()=>{
 const [isModalOpen, setIsModalOpen]=useState(true)
 
 const onClick=()=>{
-    setIsModalOpen(isModalOpen)
+    setIsModalOpen(!isModalOpen)
 }
     return(
         <div className={css.container}>
             <Header onClick={onClick}/>
             <div className={css.imgWrap}>
 
-                <h1 className={isModalOpen?css.headTitle:css.headTitleDisabled}> Зарабатывай на реферальной программе</h1>
+                <h1 className={isModalOpen?css.headTitleDisabled:css.headTitle}> Зарабатывай на реферальной программе</h1>
+                <div className={isModalOpen?css.modal:css.modalDisabled}> </div>
             </div>
             
         </div>

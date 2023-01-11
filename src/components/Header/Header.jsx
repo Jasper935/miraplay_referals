@@ -9,7 +9,7 @@ export const Header = ({onClick}) => {
         <h5 className={css.logoText}>MIRAPLAY</h5>
       </div>
       <div className={css.btnWrap}>
-        <button onClick={()=>console.log(onClick)} className={css.btn}>Вход</button>
+        <button onClick={()=>onClick()} className={css.btn}>Вход</button>
         <button onClick={()=>onClick()} className={css.btn}>Регистрация</button>
       </div>
     </header>
