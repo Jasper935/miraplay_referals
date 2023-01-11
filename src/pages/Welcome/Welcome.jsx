@@ -4,22 +4,31 @@ import { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
 
 export const Welcome = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const onClick = () => {
-    setIsModalOpen(!isModalOpen);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const onLogin = () => {
+    setIsLoginOpen(true);
   };
+  const onRegister= () => {
+    setIsRegisterOpen(true);
+  };
+
+  const closeModal=()=>{
+    setIsLoginOpen(false)
+    setIsRegisterOpen(false)
+
+  }
   return (
     <div className={css.container}>
-      <Header onClick={onClick} />
+      <Header onLogin={onLogin} onRegister={onRegister} />
       <div className={css.imgWrap}>
-        <h1 className={isModalOpen ? css.headTitleDisabled : css.headTitle}>
+        <h1 className={isLoginOpen||isRegisterOpen ? css.headTitleDisabled : css.headTitle}>
           {" "}
           
           Зарабатывай на реферальной программе
         </h1>
-        <div className={isModalOpen ? css.modal : css.modalDisabled}>
-          <Modal register={true} />{" "}
+        <div className={isLoginOpen||isRegisterOpen ? css.modal : css.modalDisabled}>
+          <Modal register={isRegisterOpen?true:false} closeModal={closeModal} />{" "}
         </div>
       </div>
     </div>

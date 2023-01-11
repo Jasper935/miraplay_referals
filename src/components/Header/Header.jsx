@@ -1,7 +1,8 @@
 import css from "./Header.module.css";
 import logo from "../../images/logo.svg";
 
-export const Header = ({onClick}) => {
+export const Header = ({onLogin,
+  onRegister}) => {
   return (
     <header className={css.header}>
       <div className={css.logoWrap}>
@@ -9,8 +10,8 @@ export const Header = ({onClick}) => {
         <h5 className={css.logoText}>MIRAPLAY</h5>
       </div>
       <div className={css.btnWrap}>
-        <button onClick={()=>onClick()} className={css.btn}>Вход</button>
-        <button onClick={()=>onClick()} className={css.btn}>Регистрация</button>
+        <button onClick={()=>onLogin()} className={css.btn}>Вход</button>
+        <button onClick={()=>onRegister()} className={css.btn}>Регистрация</button>
       </div>
     </header>
   );
