@@ -49,3 +49,8 @@ height: 50px;
     border-color: #ffffff;
     transition: all 0.3s linear;
 }
+.btn:disabled:hover{
+    border: 1px solid var(--main-green-color);
+color: var(--main-green-color);
+cursor: default;
+}

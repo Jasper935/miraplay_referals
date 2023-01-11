@@ -20,7 +20,7 @@ export const Welcome = () => {
   }
   return (
     <div className={css.container}>
-      <Header onLogin={onLogin} onRegister={onRegister} />
+      <Header onLogin={onLogin} onRegister={onRegister} isButtonsDisabled={(isLoginOpen||isRegisterOpen)&&true}/>
       <div className={css.imgWrap}>
         <h1 className={isLoginOpen||isRegisterOpen ? css.headTitleDisabled : css.headTitle}>
           {" "}

@@ -7,8 +7,9 @@ export const Modal = ({ register, logIn, closeModal }) => {
   return (
     <form action="submit" className={css.form} onSubmit={onSubmit}>
       <h5 className={css.title}>
-        {register && "Введите данные для регистрации"}
-        {logIn && "Введите данные для входа в аккаунт"}
+        {register
+          ? "Введите данные для регистрации"
+          : "Введите данные для входа в аккаунт"}
       </h5>
       <input
         className={css.input}
@@ -17,8 +18,7 @@ export const Modal = ({ register, logIn, closeModal }) => {
       />
       <input className={css.input} type="text" placeholder="ПАРОЛЬ" />
       <button className={css.btn} type="submit">
-        {register && "Регистрациия" }
-        {logIn&& "Вход"}
+        {register ? "Регистрациия" : "Вход"}
       </button>
       <button className={css.closeBtn} onClick={() => closeModal()}>
         x
