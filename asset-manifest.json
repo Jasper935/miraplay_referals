@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/miraplay_referals/static/css/main.057d1cd1.css",
-    "main.js": "/miraplay_referals/static/js/main.ad4df8fd.js",
+    "main.css": "/miraplay_referals/static/css/main.62ffb421.css",
+    "main.js": "/miraplay_referals/static/js/main.c270b1b4.js",
     "static/media/welcome-bg.jpg": "/miraplay_referals/static/media/welcome-bg.97fc1ca3549a5ad2b43e.jpg",
     "index.html": "/miraplay_referals/index.html",
     "static/media/logo.svg": "/miraplay_referals/static/media/logo.aae105b825289d7f2e0a5898a8f8a0fb.svg",
-    "main.057d1cd1.css.map": "/miraplay_referals/static/css/main.057d1cd1.css.map",
-    "main.ad4df8fd.js.map": "/miraplay_referals/static/js/main.ad4df8fd.js.map"
+    "main.62ffb421.css.map": "/miraplay_referals/static/css/main.62ffb421.css.map",
+    "main.c270b1b4.js.map": "/miraplay_referals/static/js/main.c270b1b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.057d1cd1.css",
-    "static/js/main.ad4df8fd.js"
+    "static/css/main.62ffb421.css",
+    "static/js/main.c270b1b4.js"
   ]
 }
