@@ -4,10 +4,10 @@
 
 body {
   margin: 0;
-  font-family: Raleway;
+  min-height: 100vh;
   scroll-behavior: smooth;
-  
-  background-color: #3c3232;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 code {
@@ -51,13 +51,7 @@ dd {
 html{
   scroll-behavior: smooth;
 }
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
+
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
